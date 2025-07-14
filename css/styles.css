@@ -1,0 +1,270 @@
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/******* NAVIGATION STYLING *******/
+.site-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 20px;
+background-color:rgb(169, 66, 148);
+}
+
+.site-logo {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    margin-right: 10px;
+}
+
+/******* MAIN CONTENT STYLING *******/
+.site-main {
+padding: 20px;
+}
+
+.welcome {
+    background-color: rgb(97, 229, 229);
+    padding: 40px 20px;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.welcome:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.about-us {
+    background-color: #f0f0f0;
+    padding: 40px 20px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    color: rgb(45, 138, 138);
+    margin-bottom: 15px;
+}
+
+.about-us p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/******* EVENTS STYLING *******/
+.events {
+    margin-top: 20px;
+    padding: 40px 20px;
+    border-radius: 25px;
+}
+
+/* Individual Event styling */
+.event {
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    border: black 1px solid;
+    align-items: flex-start;
+    flex: 1 1 300px;
+    min-width: 250px;
+}
+
+.event-details {
+    flex: 1;
+}
+
+/* Individual Event image styling */
+.event img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Media query for tablets: 768 pixels in width or less */
+@media screen and (max-width: 768px) {
+    .event {
+        max-width: 48%;
+    }
+}
+
+/* Media query for phones: 600 pixels in width or less */
+@media screen and (max-width: 600px) {
+    .event {
+        max-width: 100%;
+    }
+}
+
+/* Flexbox styling */
+.events-flexbox {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Contact page styling */
+.form-container {
+    text-align: center;
+}
+
+form input,
+form textarea,
+form label {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto; /* <-- THIS centers the form */
+    background-color: beige;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+form .button {
+    background-color: rgb(45, 138, 138);
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+    width: 50%;
+    transition: background-color 0.3s ease;
+}
+
+form .button:hover {
+    background-color: rgb(30, 100, 100);
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 2px solid rgb(45, 138, 138);
+    background-color: #f5fafa;
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        width: 80%;
+    }
+}
+
+/* MENU PAGE STYLING */
+
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+.menu-table th,
+.menu-table td {
+    border: 1px solid #ccc;
+    padding: 12px 16px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.menu-table img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* LOCATION PAGE STYLING */
+.location-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.location-details {
+    max-width: 600px;
+}
+
+.location-details h2 {
+    color: rgb(45, 138, 138);
+    margin-top: 30px;
+}
+
+.location-details ul {
+    list-style-type: disc;
+    list-style-position: inside; 
+    padding-left: 0;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.map-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+/* Category headers */
+.category-header {
+    background-color: rgb(45, 138, 138);
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Hover effect */
+.menu-table tbody tr:hover {
+    background-color: #f0f8ff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.site-footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(45, 138, 138);
+    color: white;
+    text-align: center;
+    padding-bottom: 0px;
+}
